@@ -14,10 +14,10 @@ const app = express();
 
 // Middleware
 app.use(cors());
-app.use(express.json()); // To parse JSON requests
+app.use(express.json());
 
 // Routes
-app.use('/api/data', dataRoutes);
+app.use('/api/data', dataRoutes);  // Make sure this matches the route in Postman
 
 // Start server
 const PORT = process.env.PORT || 5000;

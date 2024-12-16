@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import DataList from './components/DataList';
 import DataForm from './components/DataForm';
@@ -24,7 +23,7 @@ const App = () => {
         <div>
             <h1>React-Backend Integration</h1>
             <DataForm setDataList={setDataList} /> {/* Pass setDataList to DataForm */}
-            <DataList data={dataList} /> {/* Pass dataList to DataList */}
+            <DataList data={dataList} setDataList={setDataList} /> {/* Pass dataList and setDataList to DataList */}
         </div>
     );
 };
